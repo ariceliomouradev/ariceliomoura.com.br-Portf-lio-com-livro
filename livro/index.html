@@ -24,22 +24,30 @@
   <meta property="og:url" content="https://ariceliomoura.com.br/livro/">
   <meta property="og:image" content="https://ariceliomoura.com.br/livro/img/capa-frente.png">
   <meta property="og:image:alt" content="Capa do livro Programar, Testar, Automatizar">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1262">
+  <meta property="og:image:height" content="1812">
+  <meta property="book:author" content="https://ariceliomoura.com.br/">
+  <meta property="book:release_date" content="2026">
+  <meta property="book:tag" content="Java">
+  <meta property="book:tag" content="Testes de software">
+  <meta property="book:tag" content="Inteligência artificial">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Programar, Testar, Automatizar">
   <meta name="twitter:description" content="Java, web, qualidade de software e IA aplicada. Escrever, testar e conferir.">
   <meta name="twitter:image" content="https://ariceliomoura.com.br/livro/img/capa-frente.png">
+  <meta name="twitter:image:alt" content="Capa do livro Programar, Testar, Automatizar">
 
   <!-- Ícone da aba do navegador -->
   <link rel="icon" type="image/svg+xml" href="../img/logo-icone.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/icone-192.png">
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Archivo+Narrow:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preload" as="image" href="img/capa-frente-700.webp" imagesrcset="img/capa-frente-400.webp 400w, img/capa-frente-700.webp 700w, img/capa-frente-1000.webp 1000w" imagesizes="(max-width: 700px) 193px, 338px" fetchpriority="high">
+  <link rel="stylesheet" href="css/estilo.css?v=20261014">
 
   <!-- Dados estruturados (ajudam o Google a entender o livro, o autor e as perguntas frequentes) -->
   <script type="application/ld+json">
@@ -47,41 +55,157 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Book",
+        "@type": [
+          "Book",
+          "Product"
+        ],
         "@id": "https://ariceliomoura.com.br/livro/#livro",
         "name": "Programar, Testar, Automatizar",
         "alternativeHeadline": "Java, web, qualidade de software e inteligência artificial aplicada",
         "description": "Livro de programação do zero à inteligência artificial, com Java, web, testes de software e IA aplicada. 906 páginas e 71 capítulos, com teoria e prática em cada um.",
         "numberOfPages": 906,
         "inLanguage": "pt-BR",
-        "image": "https://ariceliomoura.com.br/livro/img/capa-frente.png",
+        "image": [
+          "https://ariceliomoura.com.br/livro/img/capa-frente.png",
+          "https://ariceliomoura.com.br/livro/img/capa-verso.png"
+        ],
         "url": "https://ariceliomoura.com.br/livro/",
-        "author": { "@id": "https://ariceliomoura.com.br/#autor" },
-        "about": ["Java", "Testes de software", "Qualidade de software", "Inteligência artificial", "Spring Boot", "Angular"],
-        "audience": { "@type": "Audience", "audienceType": "Pessoas que nunca programaram, estudantes, professores e quem prefere um aprendizado mais leve" },
+        "author": {
+          "@id": "https://ariceliomoura.com.br/#autor"
+        },
+        "about": [
+          "Java",
+          "Testes de software",
+          "Qualidade de software",
+          "Inteligência artificial",
+          "Spring Boot",
+          "Angular"
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Pessoas que nunca programaram, estudantes, professores e quem prefere um aprendizado mais leve"
+        },
         "offers": {
           "@type": "Offer",
-          "url": "https://pay.hotmart.com/W108020193L",
+          "url": "https://ariceliomoura.com.br/livro/",
           "price": "97.00",
           "priceCurrency": "BRL",
           "availability": "https://schema.org/InStock",
-          "seller": { "@id": "https://ariceliomoura.com.br/#autor" }
-        }
+          "seller": {
+            "@id": "https://ariceliomoura.com.br/#autor"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "BR",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
+        },
+        "bookFormat": "https://schema.org/EBook",
+        "copyrightYear": 2026,
+        "brand": {
+          "@type": "Brand",
+          "name": "Aricelio Moura"
+        },
+        "keywords": "livro de Java, aprender programação, programação para iniciantes, testes de software, QA, Spring Boot, Angular, Cypress, Claude Code, inteligência artificial"
       },
       {
         "@type": "Person",
         "@id": "https://ariceliomoura.com.br/#autor",
         "name": "Aricelio Moura",
+        "jobTitle": "Desenvolvedor e consultor de tecnologia",
         "url": "https://ariceliomoura.com.br/",
         "email": "contato@ariceliomoura.com.br",
-        "sameAs": ["https://www.instagram.com/ariceliomouradev"]
+        "image": "https://ariceliomoura.com.br/img/foto-aricelio.webp",
+        "worksFor": {
+          "@id": "https://ariceliomoura.com.br/#negocio"
+        },
+        "knowsAbout": [
+          "Desenvolvimento web",
+          "Lojas virtuais",
+          "Aplicativos Android e iOS",
+          "Aplicativos para Smart TV",
+          "SEO técnico",
+          "Chatbots com inteligência artificial",
+          "Automação",
+          "QA e testes automatizados",
+          "Cypress",
+          "Java",
+          "Spring Boot",
+          "Angular"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/ariceliomouradev",
+          "https://www.linkedin.com/in/ariceliomoura"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://ariceliomoura.com.br/#negocio",
+        "name": "Aricelio Moura",
+        "url": "https://ariceliomoura.com.br/"
       },
       {
         "@type": "WebSite",
-        "@id": "https://ariceliomoura.com.br/livro/#site",
-        "name": "Programar, Testar, Automatizar",
+        "@id": "https://ariceliomoura.com.br/#site",
+        "name": "Aricelio Moura",
+        "url": "https://ariceliomoura.com.br/",
+        "inLanguage": "pt-BR",
+        "description": "Sites, lojas virtuais, aplicativos e chatbots com IA sob medida, e o livro Programar, Testar, Automatizar.",
+        "publisher": {
+          "@id": "https://ariceliomoura.com.br/#negocio"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ariceliomoura.com.br/livro/#pagina",
         "url": "https://ariceliomoura.com.br/livro/",
-        "inLanguage": "pt-BR"
+        "name": "Programar, Testar, Automatizar | Livro de Java, testes e IA",
+        "description": "Livro de Java, web, testes de software e IA aplicada, do zero à prática. 906 páginas e 71 capítulos, com teoria e código testado em cada um. Escrito por Aricelio Moura.",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@id": "https://ariceliomoura.com.br/#site"
+        },
+        "about": {
+          "@id": "https://ariceliomoura.com.br/livro/#livro"
+        },
+        "mainEntity": {
+          "@id": "https://ariceliomoura.com.br/livro/#livro"
+        },
+        "author": {
+          "@id": "https://ariceliomoura.com.br/#autor"
+        },
+        "breadcrumb": {
+          "@id": "https://ariceliomoura.com.br/livro/#trilha"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://ariceliomoura.com.br/livro/img/capa-frente.png",
+          "width": 1262,
+          "height": 1812
+        },
+        "dateModified": "2026-10-14"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ariceliomoura.com.br/livro/#trilha",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://ariceliomoura.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Livro Programar, Testar, Automatizar",
+            "item": "https://ariceliomoura.com.br/livro/"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -89,44 +213,69 @@
           {
             "@type": "Question",
             "name": "Preciso saber programar para começar?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Não. Eu começo do zero e explico cada termo técnico na primeira vez em que ele aparece." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Eu começo do zero e explico cada termo técnico na primeira vez em que ele aparece."
+            }
           },
           {
             "@type": "Question",
             "name": "Quais tecnologias vou aprender no livro?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Você aprende Java, da versão 8 à 25, orientação a objetos, Git, SQL e JDBC, HTML, CSS e JavaScript, Spring Boot, Angular, testes com JUnit e Cypress, e o uso de inteligência artificial com Claude Code." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você aprende Java, da versão 8 à 25, orientação a objetos, Git, SQL e JDBC, HTML, CSS e JavaScript, Spring Boot, Angular, testes com JUnit e Cypress, e o uso de inteligência artificial com Claude Code."
+            }
           },
           {
             "@type": "Question",
             "name": "O código do livro foi testado?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Eu executei todo o código antes de ele entrar no texto. Se rodou na minha máquina, vai rodar na sua também." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Eu executei todo o código antes de ele entrar no texto. Se rodou na minha máquina, vai rodar na sua também."
+            }
           },
           {
             "@type": "Question",
             "name": "Posso usar o livro para dar aula?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Pode. Cada capítulo traz exercícios em três níveis, com respostas, e um guia para você planejar a aula." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pode. Cada capítulo traz exercícios em três níveis, com respostas, e um guia para você planejar a aula."
+            }
           },
           {
             "@type": "Question",
             "name": "Vou conseguir acompanhar o livro com facilidade?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Eu escrevo com frases curtas e parágrafos leves, e explico cada termo técnico na primeira vez em que ele aparece. Isso ajuda qualquer pessoa a aprender com menos esforço." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Eu escrevo com frases curtas e parágrafos leves, e explico cada termo técnico na primeira vez em que ele aparece. Isso ajuda qualquer pessoa a aprender com menos esforço."
+            }
           },
           {
             "@type": "Question",
             "name": "Quantas páginas tem o livro?",
-            "acceptedAnswer": { "@type": "Answer", "text": "O livro tem 906 páginas de conteúdo, com 71 capítulos organizados em 10 partes."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O livro tem 906 páginas de conteúdo, com 71 capítulos organizados em 10 partes."
+            }
           },
           {
             "@type": "Question",
             "name": "Onde posso comprar o livro?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Pelo botão Garantir exemplar, aqui no site, que leva ao checkout seguro da Hotmart. Se preferir, fale comigo pelo WhatsApp ou pelo Instagram e eu combino a compra direta." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pelo botão Garantir exemplar, aqui no site, que leva ao checkout seguro da Hotmart. Se preferir, fale comigo pelo WhatsApp ou pelo Instagram e eu combino a compra direta."
+            }
           },
           {
             "@type": "Question",
             "name": "Como funciona o pagamento e a garantia?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Na compra pela Hotmart, você pode pagar com Pix, boleto ou cartão. No cartão, dá para parcelar em até 12x, com os juros do parcelamento. Com o Pix a confirmação é rápida, e no boleto o acesso chega depois que o banco confirma o pagamento. Você tem 7 dias de garantia: se não gostar, peça o reembolso nesse prazo." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Na compra pela Hotmart, você pode pagar com Pix, boleto ou cartão. No cartão, dá para parcelar em até 12x, com os juros do parcelamento. Com o Pix a confirmação é rápida, e no boleto o acesso chega depois que o banco confirma o pagamento. Você tem 7 dias de garantia: se não gostar, peça o reembolso nesse prazo."
+            }
           }
-        ]
+        ],
+        "@id": "https://ariceliomoura.com.br/livro/#duvidas"
       }
     ]
   }
@@ -200,10 +349,10 @@
         <p class="preco-linha"><strong>R$ 97,00</strong> à vista ou em até 12x no cartão · Garantia de 7 dias</p>
       </div>
 
-      <div class="cena"role="img" aria-label="Livro 3D com a capa de Programar, Testar, Automatizar">
+      <div class="cena" role="img" aria-label="Livro 3D com a capa de Programar, Testar, Automatizar">
         <div class="livro">
           <div class="capa">
-            <img src="img/capa-frente.png" alt="" width="454" height="652">
+            <img src="img/capa-frente-700.webp" srcset="img/capa-frente-400.webp 400w, img/capa-frente-700.webp 700w, img/capa-frente-1000.webp 1000w" sizes="(max-width: 700px) 193px, 338px" alt="" width="454" height="652" fetchpriority="high">
           </div>
           <div class="lombada" aria-hidden="true"><span>Programar · Testar · Automatizar</span></div>
         </div>
@@ -251,14 +400,14 @@
           <span class="bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="arquivo">Main.java</span>
         </figcaption>
-        <pre><code class="language-java">public class Main {
-    public static void main(String[] args) {
-        int total = somar(2, 3);
-        System.out.println("Resultado: " + total);
+        <pre><code class="language-java hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">int</span> <span class="hljs-variable">total</span> <span class="hljs-operator">=</span> somar(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+        System.out.println(<span class="hljs-string">"Resultado: "</span> + total);
     }
 
-    static int somar(int a, int b) {
-        return a + b;
+    <span class="hljs-keyword">static</span> <span class="hljs-type">int</span> <span class="hljs-title function_">somar</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span> {
+        <span class="hljs-keyword">return</span> a + b;
     }
 }</code></pre>
         <div class="saida">
@@ -307,7 +456,7 @@
     <section class="secao" id="autor" aria-labelledby="titulo-autor">
       <div class="autor">
         <figure class="contracapa reveal">
-          <img src="img/capa-verso.png" alt="Contracapa do livro Programar, Testar, Automatizar" width="454" height="652" loading="lazy">
+          <img src="img/capa-verso-700.webp" srcset="img/capa-verso-400.webp 400w, img/capa-verso-700.webp 700w, img/capa-verso-1000.webp 1000w" sizes="300px" alt="Contracapa do livro Programar, Testar, Automatizar" width="454" height="652" loading="lazy" decoding="async">
         </figure>
         <div class="autor-texto reveal">
           <p class="rotulo">Autor</p>
@@ -414,8 +563,7 @@
     <p class="direitos">© <span data-ano>2026</span> Aricelio Moura · Todos os direitos reservados</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
-  <script src="js/lojas.js" defer></script>
-  <script src="js/principal.js" defer></script>
+  <script src="js/lojas.js?v=20261014" defer></script>
+  <script src="js/principal.js?v=20261014" defer></script>
 </body>
 </html>

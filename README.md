@@ -14,6 +14,11 @@ HTML, CSS e JavaScript puros, sem framework e sem etapa de build. É só publica
 ```
 index.html              Página inicial: serviços, portfólio, como eu trabalho, sobre, dúvidas e contato
 css/home.css            Estilos da página inicial (paleta: fundo #101418 e âmbar #F5A524)
+fontes/                 Archivo, Archivo Narrow e IBM Plex Mono (woff2)
+404.html                Página de "não encontrado"
+llms.txt                Resumo do site para assistentes de IA
+site.webmanifest        Nome, cores e ícones do site
+.htaccess               Redirecionamentos, cache, compressão e segurança (Hostinger)
 js/home.js              Menu, animações, ano do rodapé e links do WhatsApp (constante WHATSAPP)
 img/                    Logo, ícones, foto, imagem de compartilhamento (og) e prints dos trabalhos
 livro/                  Página de vendas do livro
@@ -28,6 +33,27 @@ como-eu-trabalho/
 robots.txt
 sitemap.xml
 ```
+
+## SEO, desempenho e robôs de busca/IA
+
+- **Fontes** (`fontes/`): os mesmos arquivos do Google Fonts, servidos pelo próprio site. A página não depende de outro servidor e abre mais rápido.
+- **Imagens:** cada uma tem versões menores em WebP (`-240`, `-400`, `-480`, `-700`…). Com `srcset`, o navegador baixa só o tamanho que vai mostrar. Os PNG originais da capa ficam para as prévias do WhatsApp e das redes sociais.
+- **Código do livro:** o destaque de cores já vem pronto no HTML, sem a biblioteca highlight.js.
+- **Dados estruturados (JSON-LD):** um só grafo liga o negócio, o autor, o site, as páginas, o livro (Book e Product, com oferta e garantia de 7 dias), a trilha de navegação e as perguntas frequentes.
+- **`robots.txt`:** libera todos os buscadores e os robôs de IA, citando os principais pelo nome.
+- **`llms.txt`:** resumo do site em Markdown, para assistentes de IA.
+- **`sitemap.xml`:** as duas páginas, com as imagens.
+- **`.htaccess`:**
+  - www vira o endereço sem www.
+  - Os endereços antigos redirecionam com código 301.
+  - Página 404 própria.
+  - Compressão, cache de 1 ano para arquivos estáticos e cabeçalhos de segurança.
+- **`site.webmanifest`:** nome, cores e ícones do site.
+
+**Ao editar:**
+- **CSS ou JS:** troque o número `?v=20261014` no HTML. Assim os visitantes recebem a versão nova, apesar do cache longo.
+- **Imagem:** ao trocar uma imagem, salve com outro nome.
+- **Data de atualização:** atualize `dateModified` no JSON-LD e `lastmod` no `sitemap.xml`.
 
 ## Ver no computador
 

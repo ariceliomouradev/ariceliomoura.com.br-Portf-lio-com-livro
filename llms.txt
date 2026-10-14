@@ -1,0 +1,29 @@
+# Aricelio Moura
+
+> Desenvolvedor e consultor de tecnologia em Fortaleza (CE), com atendimento para todo o Brasil. Cria sites, lojas virtuais, aplicativos para celular e Smart TV, chatbots com inteligência artificial e testes automatizados (QA), com contrato e nota fiscal. É autor do livro "Programar, Testar, Automatizar", que ensina programação do zero até o uso de IA.
+
+O atendimento é direto com o desenvolvedor, do orçamento à entrega. O orçamento é gratuito pelo WhatsApp (+55 85 98692-0243) ou pelo e-mail contato@ariceliomoura.com.br. Empresa: CNPJ 63.726.325/0001-76.
+
+## Páginas principais
+
+- [Página inicial: serviços e portfólio](https://ariceliomoura.com.br/): sites para clínicas e saúde, portais para provedores de internet, chatbots com IA, aplicativos de rádio e streaming, sites institucionais, lojas virtuais, páginas de campanha e de eventos, aplicativos para celular, tablet e Smart TV, manutenção e redesign, e QA com testes automatizados (Cypress).
+- [Livro Programar, Testar, Automatizar](https://ariceliomoura.com.br/livro/): livro em PDF com 906 páginas, 71 capítulos e 10 partes, sobre Java (versões 8 a 25), orientação a objetos, Git, SQL e JDBC, HTML, CSS e JavaScript, Spring Boot, Angular, testes com JUnit e Cypress e IA com Claude Code. Todo o código foi executado antes de entrar no texto. A compra é pela Hotmart, com Pix, boleto ou cartão, e tem garantia de 7 dias.
+
+## Livro: partes
+
+- 01 Fundamentos e Java básico (capítulos 1 a 10)
+- 02 Orientação a objetos (11 a 15)
+- 03 Java moderno, de 8 a 25 (16 a 21)
+- 04 Git, SQL e JDBC (22 a 24)
+- 05 Frontend sem framework (25 a 33)
+- 06 Backend com Spring Boot (34 a 38)
+- 07 Frontend com Angular (39 a 42)
+- 08 Qualidade e testes (43 a 55)
+- 09 IA para dev e QA (56 a 67)
+- 10 Portfólio e entrevistas (68 a 71)
+
+## Contato
+
+- [WhatsApp](https://wa.me/5585986920243)
+- [Instagram @ariceliomouradev](https://www.instagram.com/ariceliomouradev)
+- E-mail: contato@ariceliomoura.com.br

@@ -1,4 +1,27 @@
+# Todos os buscadores e assistentes de IA podem ler o site inteiro.
 User-agent: *
+Allow: /
+
+# Os principais buscadores e robôs de IA, citados pelo nome (mesma regra: tudo liberado)
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: DuckDuckBot
+User-agent: DuckAssistBot
+User-agent: YandexBot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: meta-externalagent
+User-agent: Amazonbot
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://ariceliomoura.com.br/sitemap.xml
