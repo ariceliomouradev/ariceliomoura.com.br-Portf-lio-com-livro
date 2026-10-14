@@ -31,7 +31,10 @@ ErrorDocument 404 /404.html
   AddType image/webp .webp
   AddType application/manifest+json .webmanifest
   AddType text/plain .txt
+  # Acentos corretos: avisa que os arquivos de texto estão em UTF-8
+  AddCharset UTF-8 .txt .xml .webmanifest .css .js
 </IfModule>
+AddDefaultCharset UTF-8
 
 # Cache: arquivos estáticos guardados por 1 ano no navegador do visitante.
 # CSS e JS levam "?v=AAAAMMDD" no HTML: ao editar, troque o número para todos receberem a versão nova.
