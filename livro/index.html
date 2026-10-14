@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programar, Testar, Automatizar | Livro de Java, testes e IA</title>
+  <meta name="description" content="Livro de Java, web, testes de software e IA aplicada, do zero à prática. 906 páginas e 71 capítulos, com teoria e código testado em cada um. Escrito por Aricelio Moura.">
+  <meta name="keywords" content="livro Java, aprender programação, testes de software, QA, Spring Boot, Angular, inteligência artificial, Claude Code, programação para iniciantes">
+  <meta name="author" content="Aricelio Moura">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://ariceliomoura.com.br/livro/">
+  <link rel="alternate" hreflang="pt-BR" href="https://ariceliomoura.com.br/livro/">
+
+  <!-- Cor da barra do navegador no celular: a mesma cor de fundo da paleta -->
+  <meta name="theme-color" content="#101418">
+  <meta name="msapplication-TileColor" content="#101418">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Redes sociais e pré-visualização de links -->
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="Aricelio Moura">
+  <meta property="og:title" content="Programar, Testar, Automatizar">
+  <meta property="og:description" content="Java, web, qualidade de software e inteligência artificial aplicada. 906 páginas, 71 capítulos e código testado.">
+  <meta property="og:url" content="https://ariceliomoura.com.br/livro/">
+  <meta property="og:image" content="https://ariceliomoura.com.br/livro/img/capa-frente.png">
+  <meta property="og:image:alt" content="Capa do livro Programar, Testar, Automatizar">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Programar, Testar, Automatizar">
+  <meta name="twitter:description" content="Java, web, qualidade de software e IA aplicada. Escrever, testar e conferir.">
+  <meta name="twitter:image" content="https://ariceliomoura.com.br/livro/img/capa-frente.png">
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="icon" type="image/svg+xml" href="../img/logo-icone.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Archivo+Narrow:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- Dados estruturados (ajudam o Google a entender o livro, o autor e as perguntas frequentes) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Book",
+        "@id": "https://ariceliomoura.com.br/livro/#livro",
+        "name": "Programar, Testar, Automatizar",
+        "alternativeHeadline": "Java, web, qualidade de software e inteligência artificial aplicada",
+        "description": "Livro de programação do zero à inteligência artificial, com Java, web, testes de software e IA aplicada. 906 páginas e 71 capítulos, com teoria e prática em cada um.",
+        "numberOfPages": 906,
+        "inLanguage": "pt-BR",
+        "image": "https://ariceliomoura.com.br/livro/img/capa-frente.png",
+        "url": "https://ariceliomoura.com.br/livro/",
+        "author": { "@id": "https://ariceliomoura.com.br/#autor" },
+        "about": ["Java", "Testes de software", "Qualidade de software", "Inteligência artificial", "Spring Boot", "Angular"],
+        "audience": { "@type": "Audience", "audienceType": "Pessoas que nunca programaram, estudantes, professores e quem prefere um aprendizado mais leve" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://pay.hotmart.com/W108020193L",
+          "price": "97.00",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://ariceliomoura.com.br/#autor" }
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ariceliomoura.com.br/#autor",
+        "name": "Aricelio Moura",
+        "url": "https://ariceliomoura.com.br/",
+        "email": "contato@ariceliomoura.com.br",
+        "sameAs": ["https://www.instagram.com/ariceliomouradev"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ariceliomoura.com.br/livro/#site",
+        "name": "Programar, Testar, Automatizar",
+        "url": "https://ariceliomoura.com.br/livro/",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Preciso saber programar para começar?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Não. Eu começo do zero e explico cada termo técnico na primeira vez em que ele aparece." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais tecnologias vou aprender no livro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Você aprende Java, da versão 8 à 25, orientação a objetos, Git, SQL e JDBC, HTML, CSS e JavaScript, Spring Boot, Angular, testes com JUnit e Cypress, e o uso de inteligência artificial com Claude Code." }
+          },
+          {
+            "@type": "Question",
+            "name": "O código do livro foi testado?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Eu executei todo o código antes de ele entrar no texto. Se rodou na minha máquina, vai rodar na sua também." }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso usar o livro para dar aula?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pode. Cada capítulo traz exercícios em três níveis, com respostas, e um guia para você planejar a aula." }
+          },
+          {
+            "@type": "Question",
+            "name": "Vou conseguir acompanhar o livro com facilidade?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Eu escrevo com frases curtas e parágrafos leves, e explico cada termo técnico na primeira vez em que ele aparece. Isso ajuda qualquer pessoa a aprender com menos esforço." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quantas páginas tem o livro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O livro tem 906 páginas de conteúdo, com 71 capítulos organizados em 10 partes."}
+          },
+          {
+            "@type": "Question",
+            "name": "Onde posso comprar o livro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pelo botão Garantir exemplar, aqui no site, que leva ao checkout seguro da Hotmart. Se preferir, fale comigo pelo WhatsApp ou pelo Instagram e eu combino a compra direta." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o pagamento e a garantia?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Na compra pela Hotmart, você pode pagar com Pix, boleto ou cartão. No cartão, dá para parcelar em até 12x, com os juros do parcelamento. Com o Pix a confirmação é rápida, e no boleto o acesso chega depois que o banco confirma o pagamento. Você tem 7 dias de garantia: se não gostar, peça o reembolso nesse prazo." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="faixa-aviso">
+    <span class="ponto pulsando" aria-hidden="true"></span>
+    Novo livro · Java, web, qualidade de software e inteligência artificial aplicada
+  </div>
+
+  <header class="topo">
+    <nav class="pilula" aria-label="Principal">
+      <a class="marca" href="../" aria-label="Aricelio Moura, página inicial do site">
+        <span class="ponto" aria-hidden="true"></span>
+        Aricelio Moura
+      </a>
+
+      <ul class="links">
+        <li><a href="#sobre">Método</a></li>
+        <li><a href="#conteudo">Conteúdo</a></li>
+        <li><a href="#para-quem">Para quem é</a></li>
+        <li><a href="#autor">Autor</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+
+      <a class="botao primario pequeno botao-topo" href="https://pay.hotmart.com/W108020193L?src=livro" data-comprar>Garantir exemplar</a>
+
+      <button class="hamburguer" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <ul>
+          <li><a href="#sobre">Método</a></li>
+          <li><a href="#conteudo">Conteúdo</a></li>
+          <li><a href="#para-quem">Para quem é</a></li>
+          <li><a href="#autor">Autor</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+        <a class="botao primario" href="https://pay.hotmart.com/W108020193L?src=livro" data-comprar>Garantir exemplar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="heroi" id="inicio">
+      <div class="heroi-texto">
+        <p class="selo"><span class="ponto" aria-hidden="true"></span>Lançamento 2026</p>
+        <h1>Programar, <span class="destaque">Testar</span>, <span class="destaque">Automatizar</span></h1>
+        <p class="subtitulo">Java, web, qualidade de software e inteligência artificial aplicada.</p>
+        <p class="lead">
+          Eu levo você do primeiro algoritmo a um agente de IA, sempre com o
+          mesmo método: escrever, testar e conferir.
+        </p>
+
+        <ul class="chips">
+          <li>906 páginas</li>
+          <li>71 capítulos</li>
+          <li>Teoria e prática em cada capítulo</li>
+          <li>Código que eu testei antes de escrever</li>
+          <li>Leitura fácil para todos</li>
+        </ul>
+
+        <div class="botoes">
+          <a class="botao primario" href="https://pay.hotmart.com/W108020193L?src=livro" data-comprar>Garantir exemplar</a>
+          <a class="botao" href="#conteudo">Ver o conteúdo</a>
+        </div>
+        <p class="preco-linha"><strong>R$ 97,00</strong> à vista ou em até 12x no cartão · Garantia de 7 dias</p>
+      </div>
+
+      <div class="cena"role="img" aria-label="Livro 3D com a capa de Programar, Testar, Automatizar">
+        <div class="livro">
+          <div class="capa">
+            <img src="img/capa-frente.png" alt="" width="454" height="652">
+          </div>
+          <div class="lombada" aria-hidden="true"><span>Programar · Testar · Automatizar</span></div>
+        </div>
+        <div class="sombra" aria-hidden="true"></div>
+        <div class="cartao-flutuante" aria-hidden="true">
+          <span class="ok">✓</span>
+          <span>Código testado<br><small>Java 8 → 25</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-numeros" aria-label="Números do livro">
+      <dl>
+        <div><dt>Capítulos</dt><dd>71</dd></div>
+        <div><dt>Partes</dt><dd>10</dd></div>
+        <div><dt>Versões de Java</dt><dd>8 a 25</dd></div>
+        <div><dt>Páginas</dt><dd>906</dd></div>
+      </dl>
+    </section>
+
+    <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+      <p class="rotulo">Sobre o livro</p>
+      <h2 id="titulo-sobre">Escrever, testar e conferir</h2>
+      <p class="intro">Eu uso um método só, do primeiro capítulo ao último. Você aprende sem pressa e vê cada resultado com os próprios olhos.</p>
+      <div class="grade-3">
+        <article class="cartao reveal">
+          <span class="numero">01</span>
+          <h3>Escrever</h3>
+          <p>Eu explico o conceito em frases curtas, e você escreve o código com as próprias mãos.</p>
+        </article>
+        <article class="cartao reveal">
+          <span class="numero">02</span>
+          <h3>Testar</h3>
+          <p>Todo código do livro foi executado antes de entrar no texto. Se rodou na minha máquina, vai rodar na sua também.</p>
+        </article>
+        <article class="cartao reveal">
+          <span class="numero">03</span>
+          <h3>Conferir</h3>
+          <p>Você compara o seu resultado com o que eu mostro e descobre por que deu certo, ou por que deu errado.</p>
+        </article>
+      </div>
+
+      <figure class="janela-codigo reveal" aria-label="Exemplo de código Java">
+        <figcaption class="janela-barra">
+          <span class="bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="arquivo">Main.java</span>
+        </figcaption>
+        <pre><code class="language-java">public class Main {
+    public static void main(String[] args) {
+        int total = somar(2, 3);
+        System.out.println("Resultado: " + total);
+    }
+
+    static int somar(int a, int b) {
+        return a + b;
+    }
+}</code></pre>
+        <div class="saida">
+          <span class="prompt">$ java Main</span>
+          <span class="resultado">Resultado: 5</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="secao" id="conteudo" aria-labelledby="titulo-conteudo">
+      <p class="rotulo">Conteúdo</p>
+      <h2 id="titulo-conteudo">Dez partes para você ir do zero ao portfólio</h2>
+      <ol class="partes">
+        <li class="reveal"><span class="parte-num">01</span><div><h3>Fundamentos e Java básico</h3><p>Capítulos 1 a 10</p></div></li>
+        <li class="reveal"><span class="parte-num">02</span><div><h3>Orientação a objetos</h3><p>Capítulos 11 a 15</p></div></li>
+        <li class="reveal"><span class="parte-num">03</span><div><h3>Java moderno, de 8 a 25</h3><p>Capítulos 16 a 21</p></div></li>
+        <li class="reveal"><span class="parte-num">04</span><div><h3>Git, SQL e JDBC</h3><p>Capítulos 22 a 24</p></div></li>
+        <li class="reveal"><span class="parte-num">05</span><div><h3>Frontend sem framework</h3><p>Capítulos 25 a 33</p></div></li>
+        <li class="reveal"><span class="parte-num">06</span><div><h3>Backend com Spring Boot</h3><p>Capítulos 34 a 38</p></div></li>
+        <li class="reveal"><span class="parte-num">07</span><div><h3>Frontend com Angular</h3><p>Capítulos 39 a 42</p></div></li>
+        <li class="reveal"><span class="parte-num">08</span><div><h3>Qualidade e testes</h3><p>Capítulos 43 a 55</p></div></li>
+        <li class="reveal"><span class="parte-num">09</span><div><h3>IA para dev e QA</h3><p>Capítulos 56 a 67</p></div></li>
+        <li class="reveal"><span class="parte-num">10</span><div><h3>Portfólio e entrevistas</h3><p>Capítulos 68 a 71</p></div></li>
+      </ol>
+    </section>
+
+    <section class="secao" id="para-quem" aria-labelledby="titulo-para-quem">
+      <p class="rotulo">Para quem é</p>
+      <h2 id="titulo-para-quem">Escrevi para você que está começando</h2>
+      <div class="grade-3">
+        <article class="cartao reveal">
+          <h3>Se você nunca programou</h3>
+          <p>Eu apresento cada conceito em um passo por vez, com um exemplo que você pode rodar.</p>
+        </article>
+        <article class="cartao reveal">
+          <h3>Se você quer aprender de forma mais leve</h3>
+          <p>Uso frases curtas e parágrafos leves, e explico cada termo técnico na primeira vez em que ele aparece. Com menos esforço na leitura, sobra mais energia para aprender.</p>
+        </article>
+        <article class="cartao reveal">
+          <h3>Se você é professor</h3>
+          <p>Os exercícios têm três níveis, com respostas, e cada capítulo traz um guia para você usar o livro em aula.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="autor" aria-labelledby="titulo-autor">
+      <div class="autor">
+        <figure class="contracapa reveal">
+          <img src="img/capa-verso.png" alt="Contracapa do livro Programar, Testar, Automatizar" width="454" height="652" loading="lazy">
+        </figure>
+        <div class="autor-texto reveal">
+          <p class="rotulo">Autor</p>
+          <h2 id="titulo-autor">Aricelio Moura</h2>
+          <p>Escrevi este livro para quem nunca programou, para quem prefere um aprendizado mais leve e para quem vai dar aula. Visite o meu site e conheça meus outros trabalhos e o portfólio de criação de sites, sistemas e aplicativos.</p>
+          <a class="botao" href="https://ariceliomoura.com.br/" rel="author">www.ariceliomoura.com.br</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="garantir" aria-labelledby="titulo-garantir">
+      <div class="chamada reveal">
+        <div>
+          <p class="rotulo">Garanta o seu</p>
+          <h2 id="titulo-garantir">Programar, Testar, Automatizar</h2>
+          <p>Você recebe o acesso ao livro completo, em PDF, por e-mail, logo depois da confirmação do pagamento.</p>
+          <ul class="ficha" aria-label="Ficha técnica do livro">
+            <li><strong>906</strong> páginas de conteúdo</li>
+            <li><strong>71</strong> capítulos</li>
+            <li><strong>10</strong>  partes</li>
+          </ul>
+        </div>
+
+        <div class="preco-card">
+          <p class="preco-valor">R$ 97,00</p>
+          <p class="preco-detalhe">à vista ou em até 12x no cartão</p>
+          <a class="botao primario grande" href="https://pay.hotmart.com/W108020193L?src=livro" data-comprar>Garantir exemplar</a>
+          <p class="preco-selos">Compra segura pela Hotmart · Garantia de 7&nbsp;dias</p>
+        </div>
+      </div>
+
+      <h3 class="sub-compra">Prefere comprar direto comigo?</h3>
+      <p class="sub-texto">Fale comigo pelo WhatsApp ou pelo Instagram. Eu combino a forma de pagamento com você e envio o livro.</p>
+
+      <div class="lojas" id="lojas" aria-label="Compra direta com o autor">
+        <!-- preenchido por js/principal.js a partir de js/lojas.js -->
+      </div>
+    </section>
+
+    <section class="secao" id="duvidas" aria-labelledby="titulo-duvidas">
+      <p class="rotulo">Dúvidas</p>
+      <h2 id="titulo-duvidas">Perguntas frequentes</h2>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Preciso saber programar para começar?</summary>
+          <p>Não. Eu começo do zero e explico cada termo técnico na primeira vez em que ele aparece.</p>
+        </details>
+        <details class="reveal">
+          <summary>Quais tecnologias vou aprender no livro?</summary>
+          <p>Você aprende Java, da versão 8 à 25, orientação a objetos, Git, SQL e JDBC, HTML, CSS e JavaScript, Spring Boot, Angular, testes com JUnit e Cypress, e o uso de inteligência artificial com Claude Code.</p>
+        </details>
+        <details class="reveal">
+          <summary>O código do livro foi testado?</summary>
+          <p>Sim. Eu executei todo o código antes de ele entrar no texto. Se rodou na minha máquina, vai rodar na sua também.</p>
+        </details>
+        <details class="reveal">
+          <summary>Posso usar o livro para dar aula?</summary>
+          <p>Pode. Cada capítulo traz exercícios em três níveis, com respostas, e um guia para você planejar a aula.</p>
+        </details>
+        <details class="reveal">
+          <summary>Vou conseguir acompanhar o livro com facilidade?</summary>
+          <p>Sim. Eu escrevo com frases curtas e parágrafos leves, e explico cada termo técnico na primeira vez em que ele aparece. Isso ajuda qualquer pessoa a aprender com menos esforço.</p>
+        </details>
+        <details class="reveal">
+          <summary>Quantas páginas tem o livro?</summary>
+          <p>O livro tem 906 páginas de conteúdo, com 71 capítulos organizados em 10 partes.</p>
+        </details>
+        <details class="reveal">
+          <summary>Onde posso comprar o livro?</summary>
+          <p>Pelo botão <a href="#garantir">Garantir exemplar</a>, aqui no site, que leva ao checkout seguro da Hotmart. Se preferir, fale comigo pelo WhatsApp ou pelo Instagram e eu combino a compra direta.</p>
+        </details>
+        <details class="reveal">
+          <summary>Como funciona o pagamento e a garantia?</summary>
+          <p>Na compra pela Hotmart, você pode pagar com Pix, boleto ou cartão. No cartão, dá para parcelar em até 12x, com os juros do parcelamento. Com o Pix a confirmação é rápida, e no boleto o acesso chega depois que o banco confirma o pagamento. Você tem 7 dias de garantia: se não gostar, peça o reembolso nesse prazo.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p class="rodape-grande" aria-hidden="true">Programar Testar Automatizar</p>
+    <div class="rodape-colunas">
+      <div>
+        <p class="rotulo">Livro</p>
+        <a href="#sobre">Método</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#para-quem">Para quem é</a>
+        <a href="#garantir">Onde comprar</a>
+        <a href="#duvidas">Dúvidas</a>
+      </div>
+      <div>
+        <p class="rotulo">Autor</p>
+        <a href="#autor">Aricelio Moura</a>
+        <a href="../#servicos">Sites, lojas e aplicativos</a>
+        <a href="https://ariceliomoura.com.br/">www.ariceliomoura.com.br</a>
+      </div>
+      <div>
+        <p class="rotulo">Contato</p>
+        <a href="https://wa.me/5585986920243" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/ariceliomouradev" target="_blank" rel="noopener">@ariceliomouradev</a>
+        <a href="mailto:contato@ariceliomoura.com.br">contato@ariceliomoura.com.br</a>
+      </div>
+    </div>
+    <p class="direitos">© <span data-ano>2026</span> Aricelio Moura · Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+  <script src="js/lojas.js" defer></script>
+  <script src="js/principal.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Texto com fim de linha LF no repositório (igual em Windows, Mac e servidor)
+* text=auto eol=lf
+
+# Imagens são binárias
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary

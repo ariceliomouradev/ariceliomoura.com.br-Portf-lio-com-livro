@@ -1,0 +1,16 @@
+# Sistema operacional e editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Arquivos temporários e cópias geradas
+*.tmp
+*.bak
+*-novo.*
+
+# Nunca publicar o livro (produto pago) nem arquivos de trabalho
+*.pdf
+*.docx
+*.zip
