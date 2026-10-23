@@ -909,3 +909,13 @@ main { scroll-margin-top: 120px; }
 .rodape-colunas a { overflow-wrap: anywhere; }
 
 .preco-selos { text-wrap: balance; }
+
+/* Oferta por tempo limitado (Black Friday): preço antigo riscado e selo */
+.preco-de { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; font-weight: 400; }
+.selo-oferta { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--ambar); color: #101418;
+  font-family: var(--fonte-texto); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.preco-card .selo-oferta { align-self: center; margin-bottom: 4px; }
+.preco-card .preco-de { font-size: 1rem; }
+.preco-linha .preco-de { margin-right: 4px; }
+.chamada p.preco-valor { color: var(--ambar); }
+.chamada p.selo-oferta { color: #101418; }

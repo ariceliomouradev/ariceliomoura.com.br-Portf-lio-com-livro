@@ -359,3 +359,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Texto só para leitores de tela e robôs de busca (não aparece na tela) */
 .so-leitor { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+/* Oferta por tempo limitado (Black Friday): preço antigo riscado e selo */
+.preco-de { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; font-weight: 400; }
+.selo-oferta { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--ambar); color: #101418;
+  font-family: var(--fonte-texto); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.livro-preco .preco-de { font-size: 1.3rem; }
+.preco-mini .preco-de { font-size: 1.1rem; margin-right: 4px; }
+.caminho p.preco-mini { color: var(--ambar); }
+.livro-preco .selo-oferta { color: #101418; }
+.caminho p.preco-mini small { display: block; margin-top: 2px; }
